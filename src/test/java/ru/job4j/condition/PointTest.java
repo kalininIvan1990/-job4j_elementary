@@ -31,7 +31,7 @@ class PointTest {
     }
 
     @Test
-    void name() {
+    void when22to33Then1Dot414() {
         double expected = 1.414;
         int x1 = 2;
         int y1 = 2;
