@@ -2,7 +2,6 @@ package ru.job4j.calculator;
 
 public class Fit {
 
-    // Constants for weight calculation
     private static final double MAN_WEIGHT_COEFFICIENT = 1.15;
     private static final double WOMAN_WEIGHT_COEFFICIENT = 1.15;
     private static final int MAN_HEIGHT_OFFSET = 100;
@@ -27,7 +26,7 @@ public class Fit {
     }
 
     public static void main(String[] args) {
-        short height = 175; // Height in centimeters
+        short height = 175;
         double man = manWeight(height);
         System.out.println("Man " + height + " cm is " + man + " kg");
         double woman = womanWeight(height);
