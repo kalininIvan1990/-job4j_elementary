@@ -14,7 +14,7 @@ class X2Test {
         int x = 2;
         int expected = 40;
         int result = X2.calc(a, b, c, x);
-        assertEquals(40, result);
+        assertEquals(result, expected);
     }
 
     @Test

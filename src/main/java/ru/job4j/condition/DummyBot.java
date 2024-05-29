@@ -17,4 +17,5 @@ public class DummyBot {
         result = DummyBot.answer("Bye.");
         System.out.println(result);
     }
+
 }
