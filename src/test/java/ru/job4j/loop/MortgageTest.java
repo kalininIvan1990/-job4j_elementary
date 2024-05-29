@@ -33,4 +33,14 @@ class MortgageTest {
         int expected = 1;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    void whenAmount200Salary150Percent50Then3() {
+        int amount = 200;
+        int salary = 150;
+        double percent = 50;
+        int result = Mortgage.year(amount, salary, percent);
+        int expected = 3;
+        assertThat(result).isEqualTo(expected);
+    }
 }
