@@ -19,9 +19,4 @@ public class SimpleStringEncoder {
         result += counter > 1 ? counter : "";
         return result;
     }
-
-    public static void main(String[] args) {
-        System.out.println(encode("aabbс"));
-    }
-
 }
