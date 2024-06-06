@@ -16,14 +16,11 @@ public class Converter {
         float expectedEuro = 2;
         float outputEuro = Converter.rubleToEuro(inputRubToEuro);
         boolean passedConvertEuro = expectedEuro == outputEuro;
-
         float inputRubToDollar = 240;
         float expectedDollar = 4;
         float outputDollar = Converter.rubleToDollar(inputRubToDollar);
         boolean passedConvertDollar = expectedDollar == outputDollar;
-
         System.out.println("140 rubles are 2 Euro. Test result : " + passedConvertEuro);
         System.out.println("240 rubles are 4 Dollars. Test result : " + passedConvertDollar);
-
     }
 }
