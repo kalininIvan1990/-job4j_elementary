@@ -9,11 +9,9 @@ class PointTest {
     @Test
     void when11to55Then5Dot656() {
         double expected = 5.656;
-        int x1 = 1;
-        int y1 = 1;
-        int x2 = 5;
-        int y2 = 5;
-        double output = Point.distance(x1, y1, x2, y2);
+        Point a = new Point(1, 1);
+        Point b = new Point(5, 5);
+        double output = a.distance(b);
         double delta = 0.001;
         assertThat(expected).isEqualTo(output, withPrecision(delta));
     }
@@ -21,11 +19,9 @@ class PointTest {
     @Test
     void when00to97Then11Dot401() {
         double expected = 11.401;
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = 9;
-        int y2 = 7;
-        double output = Point.distance(x1, y1, x2, y2);
+        Point a = new Point(0, 0);
+        Point b = new Point(9, 7);
+        double output = a.distance(b);
         double delta = 0.001;
         assertThat(output).isEqualTo(expected, withPrecision(delta));
     }
@@ -33,12 +29,11 @@ class PointTest {
     @Test
     void when22to33Then1Dot414() {
         double expected = 1.414;
-        int x1 = 2;
-        int y1 = 2;
-        int x2 = 3;
-        int y2 = 3;
-        double output = Point.distance(x1, y1, x2, y2);
+        Point a = new Point(2, 2);
+        Point b = new Point(3, 3);
+        double output = a.distance(b);
         double delta = 0.001;
         assertThat(output).isEqualTo(expected, withPrecision(delta));
     }
+
 }
